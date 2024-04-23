@@ -11,7 +11,7 @@ use Neos\Flow\I18n\Service;
 
 /**
  * See: https://github.com/neos/neos-development-collection/issues/3190#issuecomment-730361990
- * Thanks to @kdambekalns
+ * Thanks to kdambekalns
  *
  * The LocaleHelper deals with i18n-related things.
  */
