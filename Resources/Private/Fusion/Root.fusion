@@ -14,6 +14,9 @@ error {
         @position = 'start'
         condition = ${statusCode >= 400 && statusCode < 500 && notfoundDocument}
         renderer = Neos.Fusion:Renderer {
+            languageDimensionName = ${Configuration.setting('MOC.NotFound.languageDimensionName')}
+            i18nServiceToProperLocale = ${NotFound.LocaleHelper.setCurrentFromNode(notfoundDocument, this.languageDimensionName)}
+            @context.site = ${notfoundDocument.context.currentSiteNode}
             @context.node = ${notfoundDocument}
             @context.documentNode = ${notfoundDocument}
             renderPath = '/root'

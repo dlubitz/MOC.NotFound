@@ -2,6 +2,7 @@ Neos:
   Fusion:
     defaultContext:
       NotFound.Context: MOC\NotFound\Fusion\Eel\Helper\ContextHelper
+      NotFound.LocaleHelper: MOC\NotFound\Fusion\Eel\Helper\LocaleHelper
   Neos:
     fusion:
       autoInclude:
@@ -9,3 +10,4 @@ Neos:
 MOC:
   NotFound:
     uriPathSegment: 404
+    languageDimensionName: language
